@@ -3,7 +3,8 @@ run-name: Fast-Forward Merge
 on:
     issue_comment:
         types: [created]
-
+env:
+    GH_TOKEN: ${{ github.token }}
 
 jobs:
     ff_merge:
